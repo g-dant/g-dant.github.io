@@ -32,6 +32,4 @@ Software Engineer / Mathematician with experience in the area of Machine Learnin
 > Web programming in Django (Python) / Spring MVC + Hibernate (Java). Knowledge of Continuous Integration (CI) / Continuous Delivery (CD) techniques. Design Patterns knowledge and experience with tests using Selenium.
 
 ## Languages
-| Portuguese | French | English |
-|---|---|---|
-| Mother Language | DALF C2 | TOEFL IFP |
+Portuguese (Mother language), English (TOEFL IFP) and French (DALF C2)
