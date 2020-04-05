@@ -12,7 +12,7 @@ Software Engineer / Mathematician with experience in the area of Machine Learnin
 
 | Generalist Engineering | Electronics Engineering | Applied Mathematics in Scientific Computing |
 |---|---|---|
-| École Centrale de Lyon, France | Universidade Federal do Rio de Janeiro | Universidade Federal do Rio de Janeiro
+| École Centrale de Lyon, France | Universidade Federal do Rio de Janeiro | Universidade Federal do Rio de Janeiro |
 
 ## Competences
 
