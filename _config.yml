@@ -2,5 +2,11 @@ title: G-DANTs PAGE
 theme: jekyll-theme-minimal
 logo: logo.jpeg
 show_downloads: "false"
-description: <p>The adventures of a geek programmer 
-      who believes that artificial intelligence can be trained to prepare his own coffee</p><ul><li><center>Projects <strong>LINK</strong></center></li><li><center>About Me <strong>LINK</strong></center></li></ul>
+description: 
+      <p>The adventures of a geek programmer 
+      who believes that artificial intelligence can be trained to prepare his own coffee</p>
+      <ul>
+      <li><center>Projects <strong>LINK</strong></center></li>
+      <li><center>About Me <strong>LINK</strong></center></li>
+      <li><center>Blog <strong>SOON</strong></center></li>
+      </ul>
