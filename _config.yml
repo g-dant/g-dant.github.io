@@ -1,4 +1,4 @@
 title: G-DANTs PAGE
 theme: jekyll-theme-minimal
 show_downloads: "false"
-description: <p>The adventures of a geek programmer who believes that artificial intelligence can be trained to prepare his own coffee</p><ul><li>Projects <strong>LINK</strong></li><li>About Me <strong>LINK</strong></li><hr>
+description: <p>The adventures of a geek programmer who believes that artificial intelligence can be trained to prepare his own coffee</p><ul><li class="marker">Projects <strong>LINK</strong></li><li class="marker">About Me <strong>LINK</strong></li><hr>
