@@ -1,4 +1,4 @@
-# Follow the Nerd
+# G.Dant's Page
 
 Hello! My name is Guilherme, I am an Engineer/Mathematician with more than 5 years of experience in programming scientific algorithms and in software engineering. I also worked as a consultant in the area of energy distribution. Feel free to follow me and check out my projects and blog posts, which will cover my areas of interest:
 
