@@ -2,8 +2,8 @@ title: Follow the Nerd
 theme: jekyll-theme-minimal
 logo: logo.jpeg
 relative_url: "/index"
-projects_url: "/followthenerd/projects"
-about_me_url: "/followthenerd/about"
+projects_url: "/follow-the-nerd/projects"
+about_me_url: "/follow-the-nerd/about"
 blog_url: "/follow_the_nerd/blog"
 show_footer: false
 show_downloads: true
