@@ -2,6 +2,7 @@ title: G-DANTs PAGE
 theme: jekyll-theme-minimal
 logo: logo.jpeg
 show_downloads: "false"
+relative_url: "/index.md"
 description: 
       <p>The adventures of a geek programmer 
       who believes that artificial intelligence can be trained to prepare his own coffee</p>
