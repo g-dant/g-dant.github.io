@@ -9,17 +9,21 @@ description:
       <ul>
       
       <li>
+      <a href="/projects.md">
       <center>Projects 
       <strong>
-      <a href="/projects.md">LINK</a>
+      LINK
       </strong></center>
+      </a>
       </li>
       
-      <li><center>About Me 
+      <li><center>About Me
+      <a href="/about.md">
       <strong>
-      <a href="/about.md">LINK</a>
+      LINK
       </strong>
       </center>
+      </a>
       </li>
       
       <li><center>Blog Posts <strong>SOON</strong></center></li>
