@@ -27,5 +27,14 @@ description:
       </a>
       </li>
       
-      <li><center>Blog Posts <strong>SOON</strong></center></li>
+      <li>
+      <!--<a href="/follow-the-nerd/about">-->
+      <center>Blog
+      <strong>
+      SOON
+      </strong>
+      </center>
+      <!--</a>-->
+      </li>
+      
       </ul>
