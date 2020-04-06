@@ -2,9 +2,9 @@ title: Follow the Nerd
 theme: jekyll-theme-minimal
 logo: logo.jpeg
 relative_url: "/index"
-projects_url: "/follow-the-nerd/projects"
-about_me_url: "/follow-the-nerd/about"
-blog_url: "/follow_the_nerd/blog"
+projects_url: "/projects"
+about_me_url: "/about"
+blog_url: "/blog"
 show_footer: false
 show_downloads: true
 description: The adventures of a geek programmer who believes that artificial intelligence can be trained to prepare his own coffee
