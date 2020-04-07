@@ -49,11 +49,13 @@
 				  <th>Tags</th>
 			  </tr>
 			  {% for repository in site.github.public_repositories  %}
+			  {% if repository.name != "g-dant.github.io" %}
 			  <tr>
-				  <td><a href="{{ repository.html_url }}">{{ repository.name  }}</a></td>
+				  <td><b><a href="{{ repository.html_url }}">{{ repository.name  }}</a></b></td>
 				  <td>{{ repository.description }}</td>
 				  <td>{% for topic in repository.topics %}{{ topic }} {% endfor %}</td>
 			  </tr>
+			  {% endif %}
 			  {% endfor %}
           </table>		
 
