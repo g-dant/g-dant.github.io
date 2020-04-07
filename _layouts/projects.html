@@ -46,11 +46,13 @@
 			  <tr>
 				  <th>Project</th>
 				  <th>Description</th>
+				  <th>Tags</th>
 			  </tr>
 			  {% for repository in site.github.public_repositories  %}
 			  <tr>
 				  <td><a href="{{ repository.html_url }}">{{ repository.name  }}</a></td>
-				  <td>{{ repository }}</td>
+				  <td>{{ repository.html_url_description }}</td>
+				  <td>{{ for topic in repository.topics }}topic {{ endfor }}</td>
 			  </tr>
 			  {% endfor %}
           </table>		
