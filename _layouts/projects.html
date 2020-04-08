@@ -39,26 +39,22 @@
         {% endif %}
       </header>
       <section>
-		
-		  <h1>My Projects</h1>
-
-		  <table>
-			  <tr>
-				  <th>Project</th>
-				  <th>Description</th>
-				  <!-- <th>Tags</th> -->
-			  </tr>
-			  {% for repository in site.github.public_repositories  %}
-			  {% if repository.name != "g-dant.github.io" %}
-			  <tr>
-				  <td><b><a href="{{ repository.html_url }}">{{ repository.name  }}</a></b></td>
-				  <td>{{ repository.description }}</td>
-				  <!-- <td>{% for topic in repository.topics %}{{ topic }} {% endfor %}</td> -->
-			  </tr>
-			  {% endif %}
-			  {% endfor %}
-          </table>		
-
+	    <h1>My Projects</h1>
+        {% for repository in site.github.public_repositories  %}
+		{% if repository.name != "g-dant.github.io" %}
+		<table>
+		  <tr>
+			<td colspan="2">
+			  <a href="{{ repository.html_url }}">
+				{{ repository.name  }}
+			  </a>
+			</td>
+		  </tr>
+		  <tr>
+			<td>{{ repository.description  }}</td>
+			<td><b>TAGS:</b> {% for topic in repository.topics %}{{ topic }} {% endfor %}</td>
+		  </tr>
+		</table>
       </section>
       <footer>
         {% if site.show_footer %}
