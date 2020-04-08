@@ -23,6 +23,13 @@
 			padding: 1px;
             margin: 1px;
 		  }
+		  .table_container{
+		    border-style: solid;
+			border-width: 1px;
+			padding: 5px;
+			margin: 3px;
+			display: block;
+		  }
         </style>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
@@ -52,7 +59,7 @@
 	    <h1>My Projects</h1>
         {% for repository in site.github.public_repositories  %}
 		{% if repository.name != "g-dant.github.io" %}
-		<table>
+		<div class="table_container"><table>
 		  <tr>
 			<td colspan="2">
 			  <h3><a href="{{ repository.html_url }}">
@@ -66,7 +73,7 @@
 		  <tr>
 			  <td><b>TAGS:</b> {% for topic in repository.topics %}<div class="tag">{{ topic }}</div> {% endfor %}</td>
 		  </tr>
-		</table>
+		</table></div>
 		{% endif %}
 		{% endfor %}
       </section>
