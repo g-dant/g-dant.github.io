@@ -3,8 +3,7 @@ layout: post
 author: G-Dant
 ---
 
-# The GGPLOT Basis
-## Using a pandemy data analysis to present basic concepts of the "Grammar of Graphics"
+###### Using a pandemy data analysis to present basic concepts of the "Grammar of Graphics"
 
 Hello everybody! This is my first blog post and it's part of something that I wanted to create since the last year: a personal portal with my portfolio and with a space to share my ideas with the community.
 
