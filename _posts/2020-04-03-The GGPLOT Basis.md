@@ -15,5 +15,5 @@ Based on the concepts of "Grammar of Graphics", the "GGPLOT" library was created
 
 Let's check these concepts here in a hands-on way, where I will present examples that are present in my ![Kaggle's COVID-19 Analysis notebook](https://www.kaggle.com/guidant/covid19-evolution-transmission-spatialpatterns).
 
-# 1. Before Showing the Grammar of Graphics..
+# 1. Before Showing the Grammar of Graphics...
 ## Another great concept!
