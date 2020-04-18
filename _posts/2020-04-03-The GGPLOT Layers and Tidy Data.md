@@ -26,4 +26,4 @@ It was Hadley Wickham who purposed the concept of "Tidy Data":
 
 We can implement simple tabular data structures using dataframe variables and they are available in different languages such as Python and R (you can even find Java implementations). Well, the "Tidy Data" can be seen as an "evolution" of the dataframes. It's a different philosophy where the tabular data is organized in a simple and objective way:
 
-![Tidy Data](https://www.researchgate.net/publication/332048735/figure/fig1/AS:741418188406792@1553779279709/The-wide-versus-tidy-data-format-In-the-wide-spreadsheet-like-data-format-each-column.png)
+![Tidy Data](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKnctHMvr8D512BsoCW2EIAop8rjbjomSC7drFo0ag_GoGeaYj&usqp=CAU)
