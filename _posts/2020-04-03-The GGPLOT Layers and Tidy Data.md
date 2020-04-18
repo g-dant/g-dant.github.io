@@ -20,9 +20,9 @@ Let's check these concepts here in a hands-on way, where I will present examples
 # 1. Before Showing the Grammar of Graphics...
 ## Another great concept!
 
-It was Hadley Wickham who purposed the concept of "Tidy Data":
+It was Hadley Wickham who purposed the concept of "Tidy Data". In R, we can see a an ensemble of packages called Tidyverse, with functions that process this kind of variable:
 
-![Hadley Wickham](https://miro.medium.com/fit/c/256/256/0*5xu48xWdk05hFWfn.jpg)
+![Tidyverse](https://miro.medium.com/max/4032/1*B-cwhqnFgGIbd9lWnzi_mQ.png)
 
 We can implement simple tabular data structures using dataframe variables and they are available in different languages such as Python and R (you can even find Java implementations). Well, the "Tidy Data" can be seen as an "evolution" of the dataframes. It's a different philosophy where the tabular data is organized in a simple and objective way:
 
