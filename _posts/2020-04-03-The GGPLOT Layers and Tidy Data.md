@@ -40,3 +40,14 @@ Suppose we are studying the evolution of the number of deaths and confirmed case
  Well, do we really need to have a pair of columns for each country in analysis? The answer is no and it also difficults our data analysis. As we will see later, the number of lines of code that we will use to plot these numbers will be huge, thanks to a terrible data structure.
  
 ### 1.2. Simplifying Things
+
+A first simplification can be achieved by creating a new column to describe the Country:
+
+| Country | Date | Confirmed Cases | Recovered Cases |
+| --- | --- | --- | --- |
+| China | 01.03.2020 | 1321 | 222 |
+| China | 02.03.2020 | 1534 | 353 |
+| Italy | 01.03.2020 | 5409 | 783 |
+| Italy | 02.03.2020 | 6501 | 985 |
+
+Can you notice? By using this transformation, we transform an original dataset with more than $100$ columns to a table with just $4$ columns (of course we will have more rows in our new dataset version). It's somehow nearer of the Tidydata optimal disposition but there is still a problem.
