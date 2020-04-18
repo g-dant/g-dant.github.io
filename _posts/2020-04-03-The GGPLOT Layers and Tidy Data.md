@@ -50,4 +50,4 @@ A first simplification can be achieved by creating a new column to describe the 
 | Italy | 01.03.2020 | 5409 | 783 |
 | Italy | 02.03.2020 | 6501 | 985 |
 
-Can you notice? By using this transformation, we transform an original dataset with more than $100$ columns to a table with just $4$ columns (of course we will have more rows in our new dataset version). It's somehow nearer of the Tidydata optimal disposition but there is still a problem.
+Can you notice? By using this transformation, we transform an original dataset with more than 100 columns to a table with just 4 columns (of course we will have more rows in our new dataset version). It's somehow nearer of the Tidydata optimal disposition but there is still a problem.
