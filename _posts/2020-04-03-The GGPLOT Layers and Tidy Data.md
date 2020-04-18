@@ -19,3 +19,11 @@ Let's check these concepts here in a hands-on way, where I will present examples
 
 # 1. Before Showing the Grammar of Graphics...
 ## Another great concept!
+
+It was Hadley Wickham who purposed the concept of "Tidy Data":
+
+![Hadley Wickham](https://res.cloudinary.com/teepublic/image/private/s--k6BZ7i1I--/b_rgb:908d91,t_Heather%20Preview/c_limit,f_jpg,h_630,q_90,w_630/v1533925640/production/designs/3004827_0.jpg)
+
+We can implement simple tabular data structures using dataframe variables and they are available in different languages such as Python and R (you can even find Java implementations). Well, the "Tidy Data" can be seen as an "evolution" of the dataframes. It's a different philosophy where the tabular data is organized in a simple and objective way:
+
+![Tidy Data](https://www.researchgate.net/publication/332048735/figure/fig1/AS:741418188406792@1553779279709/The-wide-versus-tidy-data-format-In-the-wide-spreadsheet-like-data-format-each-column.png)
