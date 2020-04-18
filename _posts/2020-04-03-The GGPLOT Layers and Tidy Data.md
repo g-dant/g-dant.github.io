@@ -18,12 +18,25 @@ Based on the concepts of "Grammar of Graphics", the "GGPLOT" library was created
 Let's check these concepts here in a hands-on way, where I will present examples that are present in my [Kaggle's COVID-19 Analysis notebook](https://www.kaggle.com/guidant/covid19-evolution-transmission-spatialpatterns).
 
 # 1. Before Showing the Grammar of Graphics...
-## Another great concept!
+## Another great concept! __Tidydata__
+
+### 1.1. TidyVerse + TidyData = :D
 
 It was Hadley Wickham who purposed the concept of "Tidy Data". In R, we can see a an ensemble of packages called Tidyverse, with functions that process this kind of variable:
 
-![Tidyverse](https://miro.medium.com/max/4032/1*B-cwhqnFgGIbd9lWnzi_mQ.png)
+![Tidyverse](https://miro.medium.com/max/4032/1*B-cwhqnFgGIbd9lWnzi_mQ.png) 
 
-We can implement simple tabular data structures using dataframe variables and they are available in different languages such as Python and R (you can even find Java implementations). Well, the "Tidy Data" can be seen as an "evolution" of the dataframes. It's a different philosophy where the tabular data is organized in a simple and objective way:
+Do you see? The GGPlot library symbol is among the ensemble of packages of the Tidyverse. And that's why we should firstly understand the concept of "Tidy Data"
 
-![Tidy Data](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKnctHMvr8D512BsoCW2EIAop8rjbjomSC7drFo0ag_GoGeaYj&usqp=CAU)
+We can implement simple tabular data structures using dataframe variables and they are available in different languages such as Python and R (you can even find Java implementations). Well, the "Tidy Data" can be seen as an "evolution" of the dataframes. It's a different philosophy where the tabular data is organized in a simple and objective way.
+
+Suppose we are studying the evolution of the number of deaths and confirmed cases in our COVID-19 problem. We tend to receive from the data analysts a table like that:
+
+| Date | China Confirmed Cases | China Recovered Cases | Italy Confirmed Cases | Italy Recovered Cases | ... |
+| --- | --- | --- | --- | --- | --- |
+| 01.03.2020 | 1321 | 222 | 5409 | 783 | ... |
+| 02.03.2020 | 1534 | 353 | 6501 | 985 | ... |
+
+ Well, do we really need to have a pair of columns for each country in analysis? The answer is no and it also difficults our data analysis. As we will see later, the number of lines of code that we will use to plot these numbers will be huge, thanks to a terrible data structure.
+ 
+### 1.2. Simplifying Things
