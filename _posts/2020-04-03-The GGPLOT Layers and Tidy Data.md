@@ -50,4 +50,33 @@ A first simplification can be achieved by creating a new column to describe the 
 | Italy | 01.03.2020 | 5409 | 783 |
 | Italy | 02.03.2020 | 6501 | 985 |
 
-Can you notice? By using this new arrangement, we transform our original dataset with more than 100 columns to a table with just 4 columns (of course we will have more rows in our new dataset version). It's somehow nearer of the Tidydata optimal disposition but there is still a problem.
+Can you notice? By using this new arrangement, we transform our original dataset with more than 100 columns to a table with just 4 columns (of course we will have more rows in our new dataset version). It's somehow nearer of the Tidydata optimal disposition but there is still a problem: we have many different ways to represent the same data and it would be interesting to determine a "default" representation for each dataset.
+
+So, let's aways take the configuration that uses the minimum number of columns - the R Tidyverse libraries are developed to minimize the number of lines for those kinds of tables and we will use the following rules:
+* The values will be expressed in a "Values" column and
+* The other columns will show different "classifications" for that value
+
+And here we go:
+| Country | Date | Type of Feature | Value |
+| --- | --- | --- | --- |
+| China | 01.03.2020 | Confirmed Cases | 1321 |
+| China | 02.03.2020 | Confirmed Cases | 1534 |
+| Italy | 01.03.2020 | Confirmed Cases | 5049 |
+| Italy | 02.03.2020 | Confirmed Cases | 6501 |
+| China | 01.03.2020 | Confirmed Cases | 222 |
+| China | 02.03.2020 | Confirmed Cases | 353 |
+| Italy | 01.03.2020 | Confirmed Cases | 783 |
+| Italy | 02.03.2020 | Confirmed Cases | 985 |
+
+We had no reduction in the number of columns at all but, if we have more features like "Confirmed Cases", "Deaths" and "Recovered") we would minimize the width of the table. This is the Tidydata and, in R, the "Tidydata" is a different variable type, where we have the type deffinition in each column (integers, strings etc.) and where we have support to specific Tidyverse features.
+
+With this representation, we can define a "Grammar of Graphics" that allows us to represent many different analysis with a minimum number of lines and with a minimum amount of effort!
+
+# 2. The Grammar of Graphics
+## The GGPLOT Layers
+ 
+The "Grammar of Graphics" concept, another Hadley Wickham's creation, is based in 7 different layers. We will see some real code while I present each layer and, for each case, I will show an example applied to the analysis of the COVID-19 Data Analysis problem. Here we go:
+
+![GGPlot Layers](https://cxlabsblog.files.wordpress.com/2017/10/2017-10-24-14_36_29-visualization-layers-of-ggplot-google-docs.png?w=620)
+
+For now, imagine that each layer will be responsible to a different part of the final plot and so, we will "overlap" them.
