@@ -80,4 +80,6 @@ The "Grammar of Graphics" concept, another Hadley Wickham's creation, is based i
 
 ![GGPlot Layers](https://cxlabsblog.files.wordpress.com/2017/10/2017-10-24-14_36_29-visualization-layers-of-ggplot-google-docs.png?w=620)
 
-For now, imagine that each layer will be responsible to a different part of the final plot and so, we will "overlap" them.
+For now, imagine that each layer will be responsible to a different part of the final plot and so, we will "overlap" them. We will start with the most fundamental layer: the "Data".
+
+### 2.1. The *Data* Layer
