@@ -57,6 +57,7 @@ So, let's aways take the configuration that uses the minimum number of columns -
 * The other columns will show different "classifications" for that value
 
 And here we go:
+
 | Country | Date | Type of Feature | Value |
 | --- | --- | --- | --- |
 | China | 01.03.2020 | Confirmed Cases | 1321 |
