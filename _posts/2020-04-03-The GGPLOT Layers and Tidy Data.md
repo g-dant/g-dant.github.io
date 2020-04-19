@@ -80,6 +80,8 @@ The "Grammar of Graphics" concept, another Hadley Wickham's creation, is based i
 
 ![GGPlot Layers](https://cxlabsblog.files.wordpress.com/2017/10/2017-10-24-14_36_29-visualization-layers-of-ggplot-google-docs.png?w=620)
 
-For now, imagine that each layer will be responsible to a different part of the final plot and so, we will "overlap" them. We will start with the most fundamental layer: the "Data".
+For now, imagine that each layer will be responsible to a different part of the final plot and so, we will "overlap" them. We will start explaning the 3 most fundamental layers: the data layer, the aesthetics layer and the geometry layer alltogether.
 
-### 2.1. The *Data* Layer
+### 2.1. 3 Fundamental Layers: __Data__ + __Aesthetics__ + __Geometry__
+
+We will show how these 3 fundamental layers work by getting our first plot: how can we see the evolution of the number confirmed cases and deaths in China and show them in a single plot? What if we want to show the curve of each feature with a different color?
