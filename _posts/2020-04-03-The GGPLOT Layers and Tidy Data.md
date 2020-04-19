@@ -82,6 +82,6 @@ The "Grammar of Graphics" concept, another Hadley Wickham's creation, is based i
 
 For now, imagine that each layer will be responsible to a different part of the final plot and so, we will "overlap" them. We will start explaning the 3 most fundamental layers: the data layer, the aesthetics layer and the geometry layer alltogether.
 
-### 2.1. 3 Fundamental Layers: __Data__ + __Aesthetics__ + __Geometry__
+### 2.1. Three Fundamental Layers: __Data__ + __Aesthetics__ + __Geometry__
 
 We will show how these 3 fundamental layers work by getting our first plot: how can we see the evolution of the number confirmed cases and deaths in China and show them in a single plot? What if we want to show the curve of each feature with a different color?
