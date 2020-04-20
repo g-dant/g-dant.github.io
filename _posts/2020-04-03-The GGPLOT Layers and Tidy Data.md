@@ -85,3 +85,14 @@ For now, imagine that each layer will be responsible to a different part of the 
 ### 2.1. Three Fundamental Layers: __Data__ + __Aesthetics__ + __Geometry__
 
 We will show how these 3 fundamental layers work by getting our first plot: how can we see the evolution of the number confirmed cases and deaths in China and show them in a single plot? What if we want to show the curve of each feature with a different color?
+
+In this case, we should answer 3 questions:
+
+* __Data Layer__: Who is the __data__? Suppose it's a table with a "tidy structure" that we will call "table_covid"
+* __Aesthetics Layer__: What do we want to plot? In the X axis we want to show the "Date" column, in the Y axis we want to show the the "Value" column and we want to show a different curve for each value of the column "Type of Feature"
+* __Geometry Layer__: What kind of plot we want to show? We will start by showing a simple scatter plot!
+
+In R, the "Grammar of Graphics" description of such plot would be:
+```r
+ggplot(table_covid, aes(x = Date, y = Value, fill = Type)) + geom_point()
+```
