@@ -157,7 +157,7 @@ The size argument in the geom_point geometry is used to show bigger points, the 
 
 So, let's check how can we improve our mini analysis showing a brief explanation about the statistics layer!
 
-### 2.3. Use the __Statistics__ Layer when things become caotic
+### 2.3. Use the __Statistics__ Layer when things become chaotic
 
 Let's start working with some real data:
 
@@ -173,3 +173,7 @@ Let's start working with some real data:
 | 8 | 2020-01-22   |   Guizhou     |   Mainland China | 1/22/2020 17:…   |      1   |   0    |     0 |
 | 9 | 2020-01-22   |   Hainan      |   Mainland China | 1/22/2020 17:…   |      4   |   0    |     0 |
 | 10 | 2020-01-22   |   Hebei       |   Mainland China | 1/22/2020 17:…   |      1  |    0    |     0 |
+
+Much more chaotic, don't you think? Let's suppose that we want to get a simple statistical graphical analysis using the informations of the table above: suppose we want to know the main and the standard deviation of the death rate (Deaths / Confirmed) per country, considering different regions (Country.Region) and show the its evolution.
+
+The geometry layer can offer an easy way to handle with this.
