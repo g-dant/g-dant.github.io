@@ -172,5 +172,4 @@ Let's start working with some real data:
  | 7 | 2020-01-22   |   Guangxi     |   Mainland China | 1/22/2020 17:…   |      2   |   0    |     0 |
  | 8 | 2020-01-22   |   Guizhou     |   Mainland China | 1/22/2020 17:…   |      1   |   0    |     0 |
  | 9 | 2020-01-22   |   Hainan      |   Mainland China | 1/22/2020 17:…   |      4   |   0    |     0 |
- | ... | ... | ... | ... | ... | ... | ... |
 | 10 | 2020-01-22   |   Hebei       |   Mainland China | 1/22/2020 17:…   |      1  |    0    |     0 |
