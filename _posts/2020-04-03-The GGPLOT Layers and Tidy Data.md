@@ -162,18 +162,22 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 Let's start working with some real data:
 
 | ObservationDate | Province.State | Country.Region | Confirmed | Deaths | Recovered |
-|---|---|---|---|---|---|
-| 2020-01-22  |    Anhui       |   Mainland China |       1   |   0   |      0 |
-| 2020-01-22   |   Beijing     |   Mainland China |     14   |   0    |     0 |
-|2020-01-22    |  Chongqing    |  Mainland China |     6   |   0     |    0 |
-| 2020-01-22   |   Fujian      |   Mainland China |    1   |   0    |     0 |
-| 2020-01-22   |   Gansu       |   Mainland China |     0   |   0    |     0 |
-| 2020-01-22   |   Guangdong   |   Mainland China |     26   |   0    |     0 |
-| 2020-01-22   |   Guangxi     |   Mainland China |       2   |   0    |     0 |
-| 2020-01-22   |   Guizhou     |   Mainland China |       1   |   0    |     0 |
-| 2020-01-22   |   Hainan      |   Mainland China |      4   |   0    |     0 |
-| 2020-01-22   |   Hebei       |   Mainland China |    1  |    0    |     0 |
+|---           |---            |---               |---       |---    |---    |
+| 2020-01-22   |    Anhui      |   Mainland China |       1  |   0   |     0 |
+| 2020-01-22   |   Beijing     |   Mainland China |      14  |   0   |     0 |
+|2020-01-22    |  Chongqing    |  Mainland China  |       6  |   0   |     0 |
+| 2020-01-22   |   Fujian      |   Mainland China |       1  |   0   |     0 |
+| 2020-01-22   |   Gansu       |   Mainland China |       0  |   0   |     0 |
+| 2020-01-22   |   Guangdong   |   Mainland China |      26  |   0   |     0 |
+| 2020-01-22   |   Guangxi     |   Mainland China |       2  |   0   |     0 |
+| 2020-01-22   |   Guizhou     |   Mainland China |       1  |   0   |     0 |
+| 2020-01-22   |   Hainan      |   Mainland China |       4  |   0   |     0 |
+| 2020-01-22   |   Hebei       |   Mainland China |       1  |   0   |     0 |
 
 Much more chaotic, don't you think? Let's suppose that we want to get a simple statistical graphical analysis using the informations of the table above: suppose we want to know the main and the standard deviation of the death rate (Deaths / Confirmed) per country, considering different regions (Country.Region) and show the its evolution.
 
-The geometry layer can offer an easy way to handle with this.
+The geometry layer can offer an easy way to handle with this. We can represent many plots, one for country, using the facets layer and then we can use the ObservationDate feature as X value for the aesthetics layer. The Y axis will be represented by a simple formula: "Deaths / Confirmed" and, in this case, we will have many different points for each (X, Y) pair in each facet.
+
+And it's in this case that the statistics layer takes a fundamental role: we can get the average and the standard deviation of each set of points and represent them graphically (other statistics like the kurtosis or the assymetry can also be represented):
+
+
