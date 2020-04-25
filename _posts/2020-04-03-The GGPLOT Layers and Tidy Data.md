@@ -162,6 +162,7 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 Let's start working with some real data:
 
 <div style="overflow: auto; white-space: nowrap;">
+ 
 | ObservationDate | Province.State | Country.Region | Confirmed | Deaths | Recovered |
 |---           |---            |---               |---       |---    |---    |
 | 2020-01-22   |    Anhui      |   Mainland China |       1  |   0   |     0 |
@@ -174,6 +175,7 @@ Let's start working with some real data:
 | 2020-01-22   |   Guizhou     |   Mainland China |       1  |   0   |     0 |
 | 2020-01-22   |   Hainan      |   Mainland China |       4  |   0   |     0 |
 | 2020-01-22   |   Hebei       |   Mainland China |       1  |   0   |     0 |
+
 </div>
 
 Much more chaotic, don't you think? Let's suppose that we want to get a simple statistical graphical analysis using the informations of the table above: suppose we want to know the main and the standard deviation of the death rate (Deaths / Confirmed) per country, considering different regions (Country.Region) and show the its evolution.
