@@ -104,7 +104,7 @@ With this command, we can notice that all the three elements specified in the be
 
 And, in this case, we take the following plot:)
 
-![GGPLOT1](https://i.ibb.co/jDsyGSf/ggplot-1.png)
+![GGPLOT1](https://i.ibb.co/fC0hsxQ/ggplot-1.png)
 
 To finish this section, I would like to show some other examples. Firstly, let me say that in a scatter point can vary its size according to a value of any continuous column of the data. For instance, let's represent the size of each point of the previous graphics by the the number of deaths and the Y value by the number of confirmed cases:
 
