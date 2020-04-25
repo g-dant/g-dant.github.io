@@ -165,36 +165,94 @@ Let's start working with some real data:
 <table>
   <thead>
     <tr>
-      <th>Country</th>
-      <th>Date</th>
-      <th>Confirmed Cases</th>
-      <th>Recovered Cases</th>
+      <th>ObservationDate</th>
+      <th>Province.State</th>
+      <th>Country.Region</th>
+      <th>Confirmed</th>
+      <th>Deaths</th>
+      <th>Recovered</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>China</td>
-      <td>01.03.2020</td>
-      <td>1321</td>
-      <td>222</td>
+      <td>2020-01-22</td>
+      <td>Anhui</td>
+      <td>Mainland China</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <td>China</td>
-      <td>02.03.2020</td>
-      <td>1534</td>
-      <td>353</td>
+      <td>2020-01-22</td>
+      <td>Beijing</td>
+      <td>Mainland China</td>
+      <td>14</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <td>Italy</td>
-      <td>01.03.2020</td>
-      <td>5409</td>
-      <td>783</td>
+      <td>2020-01-22</td>
+      <td>Chongqing</td>
+      <td>Mainland China</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <td>Italy</td>
-      <td>02.03.2020</td>
-      <td>6501</td>
-      <td>985</td>
+      <td>2020-01-22</td>
+      <td>Fujian</td>
+      <td>Mainland China</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2020-01-22</td>
+      <td>Gansu</td>
+      <td>Mainland China</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2020-01-22</td>
+      <td>Guangdong</td>
+      <td>Mainland China</td>
+      <td>26</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2020-01-22</td>
+      <td>Guangxi</td>
+      <td>Mainland China</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2020-01-22</td>
+      <td>Guizhou</td>
+      <td>Mainland China</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2020-01-22</td>
+      <td>Hainan</td>
+      <td>Mainland China</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2020-01-22</td>
+      <td>Hebei</td>
+      <td>Mainland China</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
