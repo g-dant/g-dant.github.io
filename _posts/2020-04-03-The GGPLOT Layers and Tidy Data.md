@@ -286,6 +286,6 @@ You may ask me: you are using a geometry layer, where is the statstics (stats) l
 
 ![GGPLOT7](https://i.ibb.co/bRRnVt7/ggplot-7.png)
 
-Some geometries need to know the stats value to understand what kind of data we are presenting. Suppose we want to plot a histogram showing the distribution of the death rate around the world in some specific date (like 10/04/2020). We need to get a vector with such values (and, again, we will use our dplyr library):
+Some geometries need to know the stats value to understand what kind of data we are presenting. When we want to plot a bar graph and the Y values are directly in the table, we must warn the "geom_bar" function that our stats is equal to "identity" (which means: don't transform the data at all, just use the number as values - it's necessary because the default geom_bar value is "count", which works when we want to count the number of occurrences of a value and use those counts in the plot):
 
 
