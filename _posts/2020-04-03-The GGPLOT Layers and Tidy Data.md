@@ -117,7 +117,7 @@ Noting that higher values tend to generate bigger points, we can see that the nu
 
 > The "filter" command is a resource of the Dplyr library, which is great to manipulate dataframes in R. The Dplyr library is a part of the Tidyverse ecosystem.
 
-![Dplyr](https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/dplyr.png)
+![Dplyr](https://miro.medium.com/max/1200/1*NXRsFH_12sfj79W-P4qI0Q.png)
 
 What if we take the first graphic and make the color vary according to the country?
 
