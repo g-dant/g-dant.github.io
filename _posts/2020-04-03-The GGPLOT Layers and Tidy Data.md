@@ -162,6 +162,7 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 Let's start working with some real data:
 
 <div style="overflow: auto; white-space: nowrap;">
+<br>
 <table>
   <thead>
     <tr>
@@ -256,13 +257,14 @@ Let's start working with some real data:
     </tr>
   </tbody>
 </table>
+<br>
 </div>
 
 Much more chaotic, don't you think? Let's suppose that we want to get a simple statistical graphical analysis using the informations of the table above: suppose we want to know the main and the standard deviation of the death rate (Deaths / Confirmed) per country, considering different regions (Country.Region) and show the its evolution.
 
 The geometry layer can offer an easy way to handle with this. We can represent many plots, one for country, using the facets layer and then we can use the ObservationDate feature as X value for the aesthetics layer. The Y axis will be represented by a simple formula: "Deaths / Confirmed" and, in this case, we will have many different points for each (X, Y) pair in each facet.
 
-And it's in this case that the statistics layer takes a fundamental role: we can get the average and the standard deviation of each set of points and represent them graphically (other statistics like the kurtosis or the assymetry can also be represented):
+And it's in this case that the statistics layer takes a fundamental role: we can get a smooth line and the standard deviation of a T-test of each set of points and represent them graphically:
 
 ```r
 list_countries <- c("Mainland China", "France", "Sudan", "Argentina")
@@ -276,7 +278,14 @@ ggplot(df_covid %>% filter(Country.Region %in% list_countries),
   geom_smooth()
 ```
 
-The filter function is used here to show just some countries, to simplifly our example. The geom_smooth is our statistics and it can be seen as an aggregation of our datapoints for a same pair of coordinates of each facet:
+The filter function is theed here to show just some countries, to simplifly our example:
 
 ![GGPLOT6](https://i.ibb.co/wpgBJq2/ggplot-6.png)
+
+You may ask me: you are using a geometry layer, where is the statstics (stats) layer? Well, it's implicit in our function. The stats layer is aways present. So, __every geom layer has its default stats value__. In the case of the geom_smooth(), the default statistics is the stats::loess smoothing function but we can use many other methods like a simple linear model ("lm") - of course, our model is not linear so we would not obtain something that makes sense using "method = 'lm'" in our function:
+
+![GGPLOT7](https://i.ibb.co/bRRnVt7/ggplot-7.png)
+
+Some geometries need to know the stats value to understand what kind of data we are presenting. Suppose we want to plot a histogram showing the distribution of the death rate around the world in some specific date (like 10/04/2020). We need to get a vector with such values (and, again, we will use our dplyr library):
+
 
