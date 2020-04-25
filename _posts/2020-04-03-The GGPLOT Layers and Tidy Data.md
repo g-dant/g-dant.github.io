@@ -162,7 +162,7 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 Let's start working with some real data:
 
 | ObservationDate | Province.State | Country.Region | Confirmed | Deaths | Recovered |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | 2020-01-22  |    Anhui       |   Mainland China |       1   |   0   |      0 |
 | 2020-01-22   |   Beijing     |   Mainland China |     14   |   0    |     0 |
 |2020-01-22    |  Chongqing    |  Mainland China |     6   |   0     |    0 |
