@@ -161,15 +161,15 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 
 Let's start working with some real data:
 
-    | SNo | ObservationDate | Province.State | Country.Region | Last.Update | Confirmed | Deaths | Recovered |
-    |---|---|---|---|---|---|---|---|
- | 1 | 2020-01-22  |    Anhui       |   Mainland China | 1/22/2020 17:…  |       1   |   0   |      0 |
- | 2 | 2020-01-22   |   Beijing     |   Mainland China | 1/22/2020 17:…   |     14   |   0    |     0 |
- | 3 |2020-01-22    |  Chongqing    |  Mainland China | 1/22/2020 17:…    |     6   |   0     |    0 |
- | 4 | 2020-01-22   |   Fujian      |   Mainland China | 1/22/2020 17:…   |      1   |   0    |     0 |
- | 5 | 2020-01-22   |   Gansu       |   Mainland China | 1/22/2020 17:…   |      0   |   0    |     0 |
- | 6 | 2020-01-22   |   Guangdong   |   Mainland China | 1/22/2020 17:…   |     26   |   0    |     0 |
- | 7 | 2020-01-22   |   Guangxi     |   Mainland China | 1/22/2020 17:…   |      2   |   0    |     0 |
- | 8 | 2020-01-22   |   Guizhou     |   Mainland China | 1/22/2020 17:…   |      1   |   0    |     0 |
- | 9 | 2020-01-22   |   Hainan      |   Mainland China | 1/22/2020 17:…   |      4   |   0    |     0 |
+| SNo | ObservationDate | Province.State | Country.Region | Last.Update | Confirmed | Deaths | Recovered |
+|---|---|---|---|---|---|---|---|
+| 1 | 2020-01-22  |    Anhui       |   Mainland China | 1/22/2020 17:…  |       1   |   0   |      0 |
+| 2 | 2020-01-22   |   Beijing     |   Mainland China | 1/22/2020 17:…   |     14   |   0    |     0 |
+| 3 |2020-01-22    |  Chongqing    |  Mainland China | 1/22/2020 17:…    |     6   |   0     |    0 |
+| 4 | 2020-01-22   |   Fujian      |   Mainland China | 1/22/2020 17:…   |      1   |   0    |     0 |
+| 5 | 2020-01-22   |   Gansu       |   Mainland China | 1/22/2020 17:…   |      0   |   0    |     0 |
+| 6 | 2020-01-22   |   Guangdong   |   Mainland China | 1/22/2020 17:…   |     26   |   0    |     0 |
+| 7 | 2020-01-22   |   Guangxi     |   Mainland China | 1/22/2020 17:…   |      2   |   0    |     0 |
+| 8 | 2020-01-22   |   Guizhou     |   Mainland China | 1/22/2020 17:…   |      1   |   0    |     0 |
+| 9 | 2020-01-22   |   Hainan      |   Mainland China | 1/22/2020 17:…   |      4   |   0    |     0 |
 | 10 | 2020-01-22   |   Hebei       |   Mainland China | 1/22/2020 17:…   |      1  |    0    |     0 |
