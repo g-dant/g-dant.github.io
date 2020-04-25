@@ -162,20 +162,42 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 Let's start working with some real data:
 
 <div style="overflow: auto; white-space: nowrap;">
- 
-| ObservationDate | Province.State | Country.Region | Confirmed | Deaths | Recovered |
-|---           |---            |---               |---       |---    |---    |
-| 2020-01-22   |    Anhui      |   Mainland China |       1  |   0   |     0 |
-| 2020-01-22   |   Beijing     |   Mainland China |      14  |   0   |     0 |
-|2020-01-22    |  Chongqing    |  Mainland China  |       6  |   0   |     0 |
-| 2020-01-22   |   Fujian      |   Mainland China |       1  |   0   |     0 |
-| 2020-01-22   |   Gansu       |   Mainland China |       0  |   0   |     0 |
-| 2020-01-22   |   Guangdong   |   Mainland China |      26  |   0   |     0 |
-| 2020-01-22   |   Guangxi     |   Mainland China |       2  |   0   |     0 |
-| 2020-01-22   |   Guizhou     |   Mainland China |       1  |   0   |     0 |
-| 2020-01-22   |   Hainan      |   Mainland China |       4  |   0   |     0 |
-| 2020-01-22   |   Hebei       |   Mainland China |       1  |   0   |     0 |
-
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Date</th>
+      <th>Confirmed Cases</th>
+      <th>Recovered Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>China</td>
+      <td>01.03.2020</td>
+      <td>1321</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>02.03.2020</td>
+      <td>1534</td>
+      <td>353</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>01.03.2020</td>
+      <td>5409</td>
+      <td>783</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>02.03.2020</td>
+      <td>6501</td>
+      <td>985</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 Much more chaotic, don't you think? Let's suppose that we want to get a simple statistical graphical analysis using the informations of the table above: suppose we want to know the main and the standard deviation of the death rate (Deaths / Confirmed) per country, considering different regions (Country.Region) and show the its evolution.
