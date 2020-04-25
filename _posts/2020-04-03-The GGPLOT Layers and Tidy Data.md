@@ -115,6 +115,10 @@ ggplot(table_covid %>% filter(Type == 'Confirmed Cases'), aes(x = Date, y = Valu
 
 Noting that higher values tend to generate bigger points, we can see that the number of confirmed cases is correlated with the number of deaths (which is obvious but still consists in a good example).
 
+> The "filter" command is a resource of the Dplyr library, which is great to manipulate dataframes in R. The Dplyr library is a part of the Tidyverse ecosystem.
+
+![Dplyr](https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/dplyr.png)
+
 What if we take the first graphic and make the color vary according to the country?
 
 ```r
@@ -122,7 +126,7 @@ ggplot(table_covid, aes(x = Date, y = Value, color = Country)) + geom_point() + 
 ```
 ![GGPLOT3](https://i.ibb.co/9s6hmwB/ggplot-3.png)
 
-Voilá. So, we can change many aspects of the plot with a huge degree of freedom thanks to the "grammar of graphics" concept (thanks Hadley Wickham!). What about the other layers? Well, let's check them one by one. But, before, let's add a line geometry to our plot:
+Voilá. So, we can change many aspects of the plot with a huge degree of freedom thanks to  the "grammar of graphics" concept (thanks Hadley Wickham!). What about the other layers? Well, let's check them one by one. We will surely improve those plots, they are not good for the moment.
 
 Notice that it was necessary to "group" the variables according to the country in the aesthetic layer.
 
