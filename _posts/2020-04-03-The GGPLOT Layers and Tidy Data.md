@@ -161,8 +161,8 @@ So, let's check how can we improve our mini analysis showing a brief explanation
 
 Let's start working with some real data:
 
-    | SNo | ObservationDate | Province.State | Country.Region | Last.Update | Confirmed Deaths | Recovered |
-    | --- | --- | ---| --- | --- | --- | --- |
+    | SNo | ObservationDate | Province.State | Country.Region | Last.Update | Confirmed | Deaths | Recovered |
+    |---|---|---|---|---|---|---|
  | 1 | 2020-01-22  |    Anhui       |   Mainland China | 1/22/2020 17:…  |       1   |   0   |      0 |
  | 2 | 2020-01-22   |   Beijing     |   Mainland China | 1/22/2020 17:…   |     14   |   0    |     0 |
  | 3 |2020-01-22    |  Chongqing    |  Mainland China | 1/22/2020 17:…    |     6   |   0     |    0 |
