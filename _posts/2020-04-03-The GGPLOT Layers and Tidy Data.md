@@ -102,15 +102,25 @@ With this command, we can notice that all the three elements specified in the be
 * The second argument, wrapped by the aes function is the aesthetics layer: it's a really important layer that describes not only who are the X and Y axis but also how we segment our data in groups, colors or even point shapes in a scatter plot.
 * Finally, the third argument is the geometry, represented by the function geom_point. We could also take other geometries like bar plots or line plots
 
-And, in this case, we take the following plot:)
+And, in this case, we take the following plot:
 
 ![GGPLOT1](https://i.ibb.co/fC0hsxQ/ggplot-1.png)
 
 To finish this section, I would like to show some other examples. Firstly, let me say that in a scatter point can vary its size according to a value of any continuous column of the data. For instance, let's represent the size of each point of the previous graphics by the the number of deaths and the Y value by the number of confirmed cases:
 
+```r
+ggplot(table_covid %>% filter(Type == 'Confirmed Cases'), aes(x = Date, y = Value, color = Type)) + geom_point()
+```
+![GGPLOT2](https://i.ibb.co/dtLqvG2/ggplot-2.png)
+
 Noting that higher values tend to generate bigger points, we can see that the number of confirmed cases is correlated with the number of deaths (which is obvious but still consists in a good example).
 
-What if we take the first graphic and make the color __and__ the size of the point vary according to the country?
+What if we take the first graphic and make the color vary according to the country?
+
+```r
+ggplot(table_covid, aes(x = Date, y = Value, color = Country)) + geom_point() + theme(text=element_text(size=20))
+```
+![GGPLOT3](https://ibb.co/m6k0rvd)
 
 Voilá. So, we can change many aspects of the plot with a huge degree of freedom thanks to the "grammar of graphics" concept (thanks Hadley Wickham!). What about the other layers? Well, let's check them one by one. But, before, let's add a line geometry to our plot:
 
