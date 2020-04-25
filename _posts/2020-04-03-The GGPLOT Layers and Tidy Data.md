@@ -120,7 +120,7 @@ What if we take the first graphic and make the color vary according to the count
 ```r
 ggplot(table_covid, aes(x = Date, y = Value, color = Country)) + geom_point() + theme(text=element_text(size=20))
 ```
-![GGPLOT3](https://ibb.co/m6k0rvd)
+![GGPLOT3](https://i.ibb.co/9s6hmwB/ggplot-3.png)
 
 Voilá. So, we can change many aspects of the plot with a huge degree of freedom thanks to the "grammar of graphics" concept (thanks Hadley Wickham!). What about the other layers? Well, let's check them one by one. But, before, let's add a line geometry to our plot:
 
