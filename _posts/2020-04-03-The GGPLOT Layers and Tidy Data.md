@@ -102,7 +102,9 @@ With this command, we can notice that all the three elements specified in the be
 * The second argument, wrapped by the aes function is the aesthetics layer: it's a really important layer that describes not only who are the X and Y axis but also how we segment our data in groups, colors or even point shapes in a scatter plot.
 * Finally, the third argument is the geometry, represented by the function geom_point. We could also take other geometries like bar plots or line plots
 
-And, in this case, we take the following plot:
+And, in this case, we take the following plot:)
+
+![GGPLOT1](https://ibb.co/3cQpWnd)
 
 To finish this section, I would like to show some other examples. Firstly, let me say that in a scatter point can vary its size according to a value of any continuous column of the data. For instance, let's represent the size of each point of the previous graphics by the the number of deaths and the Y value by the number of confirmed cases:
 
