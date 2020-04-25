@@ -180,4 +180,19 @@ The geometry layer can offer an easy way to handle with this. We can represent m
 
 And it's in this case that the statistics layer takes a fundamental role: we can get the average and the standard deviation of each set of points and represent them graphically (other statistics like the kurtosis or the assymetry can also be represented):
 
+```r
+list_countries <- c("Mainland China", "France", "Sudan", "Argentina")
+
+ggplot(df_covid %>% filter(Country.Region %in% list_countries), 
+       aes(x = ObservationDate, 
+       y = Deaths / Confirmed, 
+       group = Country.Region)) +
+  
+  facet_wrap(vars(Country.Region), ncol = 2, scales = "free") +
+  geom_smooth()
+```
+
+The filter function is used here to show just some countries, to simplifly our example. The geom_smooth is our statistics and it can be seen as an aggregation of our datapoints for a same pair of coordinates of each facet:
+
+![GGPLOT6](https://i.ibb.co/wpgBJq2/ggplot-6.png)
 
