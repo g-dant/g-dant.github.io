@@ -132,3 +132,5 @@ Notice that it was necessary to "group" the variables according to the country i
 
 ### 2.2. The __Facets__ layer: A powerful tool for multiple visualizations
 
+What if we intend to create separate plots for each country? In common plotting frameworks it would be necessary to code one plot command per plot. Sometimes it's even necessary to plot inside for loops but...with out Grammar of Graphics approach, things can become much easier. That's the purpose of the __"facets"__ layer.
+
