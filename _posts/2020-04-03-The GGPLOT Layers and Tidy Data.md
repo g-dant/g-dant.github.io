@@ -30,7 +30,7 @@ Do you see? The GGPlot library symbol is among the ensemble of packages of the T
 
 We can implement simple tabular data structures using dataframe variables and they are available in different languages such as Python and R (you can even find Java implementations). Well, the "Tidy Data" can be seen as an "evolution" of the dataframes. It's a different philosophy where the tabular data is organized in a simple and objective way.
 
-Suppose we are studying the evolution of the number of deaths and confirmed cases in our COVID-19 problem. We tend to receive from the data analysts a table like that:
+Suppose we are studying the evolution of the number of deaths and confirmed cases in our COVID-19 problem. We tend to receive from the data analysts a table like that __(the numbers exposed here are not real, they are just examples!)__:
 
 | Date | China Confirmed Cases | China Recovered Cases | Italy Confirmed Cases | Italy Recovered Cases | ... |
 | --- | --- | --- | --- | --- | --- |
@@ -64,10 +64,10 @@ And here we go:
 | China | 02.03.2020 | Confirmed Cases | 1534 |
 | Italy | 01.03.2020 | Confirmed Cases | 5049 |
 | Italy | 02.03.2020 | Confirmed Cases | 6501 |
-| China | 01.03.2020 | Confirmed Cases | 222 |
-| China | 02.03.2020 | Confirmed Cases | 353 |
-| Italy | 01.03.2020 | Confirmed Cases | 783 |
-| Italy | 02.03.2020 | Confirmed Cases | 985 |
+| China | 01.03.2020 | Recovered Cases | 222 |
+| China | 02.03.2020 | Recovered Cases | 353 |
+| Italy | 01.03.2020 | Recovered Cases | 783 |
+| Italy | 02.03.2020 | Recovered Cases | 985 |
 
 We had no reduction in the number of columns at all but, if we have more features like "Confirmed Cases", "Deaths" and "Recovered") we would minimize the width of the table. This is the Tidydata and, in R, the "Tidydata" is a different variable type, where we have the type deffinition in each column (integers, strings etc.) and where we have support to specific Tidyverse features.
 
@@ -94,7 +94,7 @@ In this case, we should answer 3 questions:
 
 In R, the "Grammar of Graphics" description of such plot would be:
 ```r
-ggplot(table_covid, aes(x = Date, y = Value, fill = Type)) + geom_point()
+ggplot(table_covid, aes(x = Date, y = Value, color = Type)) + geom_point()
 ```
 With this command, we can notice that all the three elements specified in the begining of the section are present:
 
