@@ -134,3 +134,18 @@ Notice that it was necessary to "group" the variables according to the country i
 
 What if we intend to create separate plots for each country? In common plotting frameworks it would be necessary to code one plot command per plot. Sometimes it's even necessary to plot inside for loops but...with out Grammar of Graphics approach, things can become much easier. That's the purpose of the __"facets"__ layer.
 
+```r
+ggplot(table_covid, aes(x = Date, y = Value, color = Type)) + geom_point() +
+  facet_wrap(vars(Country), ncol = 1)
+```
+
+In the facets_wrap command, the first argument represents the "Category" that we want to split in many plots and we can add the number of columns (ncol) or the number of rows (nrow) as arguments to determine the layout of the graphics grid. So, with the command above, we get:
+
+![GGPLOT4](https://i.ibb.co/v3JYYJ5/ggplot-4.png)
+
+Hmm, much better! Don't you think? With the "facets_grid" command we have a slightly different version of use of the facets layer that allow us to split the plots in many categories characterized by more than 1 feature: one feature for the X positions of the grid and another feature for the Y positions of the grid. You can check for more references about it in the [GGPLOT's official page](https://ggplot2.tidyverse.org/reference/facet_grid.html).
+
+So, let's check how can we improve our mini analysis showing a brief explanation about the statistics layer!
+
+### 2.3. Use the __Statistics__ Layer when things become caotic
+
