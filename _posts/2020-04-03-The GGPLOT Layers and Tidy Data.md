@@ -145,6 +145,16 @@ In the facets_wrap command, the first argument represents the "Category" that we
 
 Hmm, much better! Don't you think? With the "facets_grid" command we have a slightly different version of use of the facets layer that allow us to split the plots in many categories characterized by more than 1 feature: one feature for the X positions of the grid and another feature for the Y positions of the grid. You can check for more references about it in the [GGPLOT's official page](https://ggplot2.tidyverse.org/reference/facet_grid.html).
 
+Let's finish by improving our plot and linking the groups by a line geometry:
+
+```r
+ggplot(table_covid, aes(x = Date, y = Value, color = Type, group = Type, shape = Type)) + geom_point(size = 4) + geom_line(linetype = "dashed") + facet_wrap(vars(Country), ncol = 1)
+```
+
+The size argument in the geom_point geometry is used to show bigger points, the shape aesthetics will use different shape points for each feature type and, finally, the groups will be linked by "dashed" line. Aways remember to specify a group before using the geom_line ggplot function!
+
+![GGPLOT5](https://i.ibb.co/Pj7CzcH/ggplot-5.png)
+
 So, let's check how can we improve our mini analysis showing a brief explanation about the statistics layer!
 
 ### 2.3. Use the __Statistics__ Layer when things become caotic
