@@ -155,7 +155,11 @@ The size argument in the geom_point geometry is used to show bigger points, the 
 
 ![GGPLOT5](https://i.ibb.co/Pj7CzcH/ggplot-5.png)
 
-So, let's check how can we improve our mini analysis showing a brief explanation about the statistics layer!
+So, let's check how can we improve our mini analysis showing ```{r}
+df_hospitals %>% 
+  group_by(Hospital) %>%
+  summarise(count = n())
+```a brief explanation about the statistics layer!
 
 ### 2.3. Use the __Statistics__ Layer when things become chaotic
 
@@ -212,13 +216,21 @@ Let's start working with some real data:
       <td>Gansu</td>
       <td>Mainland China</td>
       <td>0</td>
-      <td>0</td>
+      <td>0</td>```{r}
+df_hospitals %>% 
+  group_by(Hospital) %>%
+  summarise(count = n())
+```
       <td>0</td>
     </tr>
     <tr>
       <td>2020-01-22</td>
       <td>Guangdong</td>
-      <td>Mainland China</td>
+      <td>Mainland China</td>```{r}
+df_hospitals %>% 
+  group_by(Hospital) %>%
+  summarise(count = n())
+```
       <td>26</td>
       <td>0</td>
       <td>0</td>
@@ -323,3 +335,17 @@ The "count" value for the stat parameter is a manifestation of the statistical l
 ![GGPLOT9](https://i.ibb.co/j37YjTx/ggplot-9.png)
 
 __Case 2:__ What if we __want__ to first count the values, store the new data structure in a dataframe and then plot the counts? In this case, we will need to start by using the dplyr library:
+
+```r
+df_hospitals_count <- df_hospitals %>% 
+  group_by(Hospital) %>%
+  summarise(count = n())
+```
+We obtain the dataframe:
+
+| Hospital | count |
+| --- | --- |
+| A | 5 |
+| B | 2 |
+| C | 3 |
+
