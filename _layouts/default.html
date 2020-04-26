@@ -11,8 +11,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
+  <style>
+	     .tag {
+            	border-style: solid;
+            	border-width: 1px;
+            	font-size: 10px;
+            	display: inline;
+	    	      padding: 1px;
+            	margin: 1px;
+	     }
+	     .table_container{
+	            border-style: solid;
+		          border-width: 1px;
+		          padding: 5px;
+	        	  margin-top: 20px;
+		          margin-bottom: 20px;
+		          display: block;
+       }
+  </style>
   <body>
-    <div class="wrapper">
+    <div class="table_container">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
