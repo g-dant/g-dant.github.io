@@ -286,6 +286,9 @@ You may ask me: you are using a geometry layer, where is the statstics (stats) l
 
 ![GGPLOT7](https://i.ibb.co/bRRnVt7/ggplot-7.png)
 
-Some geometries need to know the stats value to understand what kind of data we are presenting. When we want to plot a bar graph and the Y values are directly in the table, we must warn the "geom_bar" function that our stats is equal to "identity" (which means: don't transform the data at all, just use the number as values - it's necessary because the default geom_bar value is "count", which works when we want to count the number of occurrences of a value and use those counts in the plot):
+The geometries need to know the stats value to understand what kind of data we are presenting. When we want to plot a bar graph and the Y values are directly in the table, we must warn the "geom_bar" function that our stats is equal to "identity" (which means: don't transform the data at all, just use the number as values - it's necessary because the default geom_bar value is "count", which works when we want to count the number of occurrences of a value and use those counts in the plot).
 
+The default value of the geometry bar statstics is "count". In this case, the geom_bar function expects to receive a single sample vector with single occurrences. In this case, the geom_bar will count how many occurrences of each type we have and will organize it automatically in a bar plot.
+
+__An Example:__ Suppose that we have a table for a given country where the name of the patient, the day of his / her death, the hospital where the patient was and the region of the hospital are columns:
 
