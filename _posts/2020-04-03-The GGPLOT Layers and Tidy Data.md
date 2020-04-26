@@ -373,3 +373,21 @@ And voilá:
 ![GGPLOT9](https://i.ibb.co/FY59BGz/ggplot-10.png)
 
 Much better! Don't you think? ;) We are ready to go! Our next step is to study the "Coordinates" layer.
+
+### 2.3. The Coordinates Layer
+
+The coordinates layer is where a set of important plot configurations is determined:
+* Will our data be displayed in normal scale or in logarithmic scales (default: normal scale - you can even define your own scale if necessary)
+* Will we use rectangular or polar coordinates (default: rectangular coordinates)
+* What will be the X and Y limits of our plot? (the GGPLOT automatically determines those limits for you but you can easily change)
+
+Let's take the previous plot and apply some coordinates transformations and show the results. Firstly, let's show our barplot in logarithmic scale:
+
+It doesn't make much sense, but I'm just plotting it to show that...ok, it's possible. Another great use is that we can transform bar plots into radar plots by simply applying a polar coordinates transformation:
+
+Finally, let's change the scales a little:
+
+And that's it! We are almost done and our next step is to describe the Themes Layer, where we will give to our plot the final details.
+
+### 2.4. The Final Touch: Theme Layer
+
