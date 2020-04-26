@@ -349,3 +349,27 @@ We obtain the dataframe:
 | B | 2 |
 | C | 3 |
 
+Now, if we want to show the same barplot we have to use the following command:
+
+```r
+ggplot(df_hospitals_count, aes(x = Hospital, y = count)) +
+  geom_bar(stat = "identity")
+```
+
+And when we use 'stat = "identity"' we just want to say: I know what I want, there is no need to transform the input data. In this case, we have to determine not only the "X" value in the aesthetics, but also the "Y" value and...
+
+![GGPLOT8](https://i.ibb.co/HNNP6BK/ggplot-8.png)
+
+Ok! It's exactly the same plot! Let's improve the appearance of the plot using the layers that we have previously presented:
+
+```{r}
+ggplot(df_hospitals, aes(x = Hospital, y = count, fill = Hospital)) + 
+  geom_bar(color = "black", stat = "identity") + 
+  theme(text = element_text(size=25))
+```
+
+And voilá:
+
+![GGPLOT9](https://i.ibb.co/FY59BGz/ggplot-10.png)
+
+Much better! Don't you think? ;) We are ready to go! Our next step is to study the "Coordinates" layer.
