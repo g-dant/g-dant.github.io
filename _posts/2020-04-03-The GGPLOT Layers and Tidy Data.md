@@ -292,3 +292,34 @@ The default value of the geometry bar statstics is "count". In this case, the ge
 
 __An Example:__ Suppose that we have a table for a given country where the name of the patient, the day of his / her death, the hospital where the patient was and the region of the hospital are columns:
 
+| Patient | Deceased | Hospital | Region |
+| --- | --- | --- | --- |
+| John | 02.04.2020 | A | Center |
+| Susan | 08.04.2020 | B | Center |
+| Mary | 01.04.2020 | C | West |
+| Joe | 17.04.2020 | C | West |
+| Peter | 2.04.2020 | A | Center |
+| Fred | 13.04.2020 | A | Center |
+| Chuck | 20.04.2020 | B | Center |
+| Cho | 21.04.2020 | C | West |
+| Albert | 5.04.2020 | A | Center |
+| Gregory | 6.04.2020 | A | Center |
+
+With such table, if we want to show the number of deceases per Hospital or per Region, we have to have 2 choices: we can let the GGPLOT statistics layer work for us __or__ we can transform the table, obtain a table with the counts per category and then call the plot function with no count transformation. Let's check each case.
+
+__Case 1 - Using Automatic Transformation__: In this case, we use the following command:
+
+```r
+ggplot(df_hospitals, aes(x = Hospital)) + 
+  geom_bar(stat = "count")
+```
+
+In this case, we have the following plot:
+
+![GGPLOT8](https://i.ibb.co/HNNP6BK/ggplot-8.png)
+
+The "count" value for the stat parameter is a manifestation of the statistical layer. It's telling ggplot to count the occurrences and group them. __But__ the count statistics is already the default value for the geom_bar function. So, let's plot another example and show the barplot of the regions without specifying the statistics:
+
+![GGPLOT9](https://i.ibb.co/j37YjTx/ggplot-9.png)
+
+__Case 2:__ What if we __want__ to first count the values, store the new data structure in a dataframe and then plot the counts? In this case, we will need to start by using the dplyr library:
