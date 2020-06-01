@@ -391,3 +391,28 @@ And that's it! We are almost done and our next step is to describe the Themes La
 
 ### 2.4. The Final Touch: Theme Layer
 
+Finally, when we talk about the "theme" layer we are talking about text size, background colors and other details that are importantto enhance the quality of our visualization. We can change the "theme layer", basically, in $2$ different ways:
+
+#### 2.4.1. Setting specifical configurations to our ggplot, using the theme function. Here we have some examples. 
+
+##### 2.4.1.A: Increasing the text size:
+```{r}
+ggplot(...) + theme(text = element.text(size = 15))
+```
+
+##### 2.4.1.B: Rotating the X axis in 90 degrees:
+```{r}
+ggplot(...) + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+#### 2.4.2.B: Using built-in GGPLOT themes
+```{r}
+# An example using a minimalistic theme
+ggplot(...) + theme_minimal()
+```
+
+You can check the themes gallery in the [official webpage](https://ggplot2.tidyverse.org/reference/ggtheme.html).
+
+## 3. Conclusions
+
+The grammar of graphics syntax may give-us a strong margin to edit, vary and customise our graphics. That`s why, in my opinion, the ggplot approach is the best one to attack and analyse complex problems fastly. We have, surely, other famous libraries such as Plotly (which is present for both, Python and R) but it`s important to mention that even the Plotly library has a version that uses the Grammar of Graphics approach - we are talking about the [Plotly Express](library).
