@@ -415,4 +415,4 @@ You can check the themes gallery in the [official webpage](https://ggplot2.tidyv
 
 ## 3. Conclusions
 
-The grammar of graphics syntax may give-us a strong margin to edit, vary and customise our graphics. That`s why, in my opinion, the ggplot approach is the best one to attack and analyse complex problems fastly. We have, surely, other famous libraries such as Plotly (which is present for both, Python and R) but it`s important to mention that even the Plotly library has a version that uses the Grammar of Graphics approach - we are talking about the [Plotly Express](library).
+The grammar of graphics syntax may give-us a strong margin to edit, vary and customise our graphics. That´s why, in my opinion, the ggplot approach is the best one to attack and analyse complex problems fastly. We have, surely, other famous libraries such as Plotly (which is present for both, Python and R) but it´s important to mention that even the Plotly library has a version that uses the Grammar of Graphics approach - we are talking about the [Plotly Express](library).
