@@ -4,7 +4,7 @@
   <sidebar-logo logosrc="https://storage.googleapis.com/kaggle-avatars/images/2991660-kg.jpeg"></sidebar-logo>
   <p><b>G.Dant: </b>
     Matemática Aplicada - Ênfase em Computação Científica (UFRJ), Engenharia Eletrônica e de Computação (UFRJ),
-    Engenharia Generalista (École Centrale de Lyon - França), MBA em Big Data - FGV
+    Engenharia Generalista (École Centrale de Lyon - França)
   </p>
 </div>
 </template>

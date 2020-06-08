@@ -19,7 +19,7 @@
 
 <style>
     .blog-container {
-        max-width: 600px;
+        max-width: 650px;
     }
 
     .blog-container table, .blog-container tr, 
