@@ -14,9 +14,9 @@ Vue.use(VueResource);
 Vue.use(VueSimpleMarkdown);
 
 const routes = [
-  { path: '', component: MainPage },
-  { path: '/posts/', component: AllBlogPosts},
-  { path: '/post/:id', component: BlogPostViewer, props: true}
+  { path: '', component: MainPage, name: 'index' },
+  { path: '/posts/', component: AllBlogPosts, name: 'posts' },
+  { path: '/post/:id', component: BlogPostViewer, name: 'posts', props: true}
 ]
 
 const router = new VueRouter({

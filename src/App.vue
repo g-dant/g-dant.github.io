@@ -3,10 +3,26 @@
     <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
       <a class="navbar-brand" href="#">G. Dant</a>
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="/projects">Projetos</a></li>
-        <li class="nav-item"><a class="nav-link" href="/posts">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about">Sobre Mim</a></li>
+        <li class="nav-item" 
+          :class="{active: this.$route.name == 'index'}" 
+          @click="activeSection = 1;">
+          <a class="nav-link" href="/">Início</a>
+        </li>
+        <li class="nav-item" 
+          :class="{active: this.$route.name == 'projects'}" 
+          @click="activeSection = 2;">
+          <a class="nav-link" href="/projects">Projetos</a>
+        </li>
+        <li class="nav-item" 
+          :class="{active: this.$route.name == 'posts'}" 
+          @click="activeSection = 3;">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item" 
+          :class="{active: this.$route.name == 'about'}" 
+          @click="activeSection = 4;">
+          <a class="nav-link" href="/about">Sobre Mim</a>
+        </li>
       </ul>
     </nav>
     <div class="shift-left">
@@ -20,6 +36,9 @@
 import Sidebar from './components/Sidebar.vue';
 
 export default { 
+  data: function() {
+    return { activeSection: 1 }
+  },
   components: { 
     sidebar: Sidebar
   }

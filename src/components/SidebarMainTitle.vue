@@ -21,5 +21,7 @@
 p {
     font-size: 12px;
     padding: 2px 8% 0px 8%;
+    text-align: center;
+    font-weight: bold;
 }
 </style>
