@@ -2,20 +2,21 @@
 <div class="sidebar">
   <sidebar-main-title>Follow the Nerd</sidebar-main-title>
   <sidebar-logo logosrc="https://storage.googleapis.com/kaggle-avatars/images/2991660-kg.jpeg"></sidebar-logo>
-  <sidebar-options></sidebar-options>
+  <p><b>G.Dant: </b>
+    Matemática Aplicada - Ênfase em Computação Científica (UFRJ), Engenharia Eletrônica e de Computação (UFRJ),
+    Engenharia Generalista (École Centrale de Lyon - França), MBA em Big Data - FGV
+  </p>
 </div>
 </template>
 
 <script>
 import SidebarMainTitle from './SidebarMainTitle.vue'
 import SidebarLogo from './SidebarLogo.vue'
-import SidebarOptions from './SidebarOptions.vue'
 
 export default {
   components: {
     sidebarMainTitle: SidebarMainTitle,
-    sidebarLogo: SidebarLogo,
-    sidebarOptions: SidebarOptions
+    sidebarLogo: SidebarLogo
   }
 }
 </script>
@@ -33,6 +34,12 @@ export default {
   overflow: auto;
   border: 1px solid black;
   border-radius: 7px;
+}
+
+p {
+    font-size: 12px;
+    padding: 25px 8% 0px 8%;
+    text-align: justify;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
