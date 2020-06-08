@@ -1,60 +1,57 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+<template lang="html">
+  <div>
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">G. Dant</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="/projects">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="/posts">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">Sobre Mim</a></li>
+      </ul>
+    </nav>
+    <div class="shift-left">
+      <sidebar></sidebar>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Testing my personal page in Vue.js'
-    }
+import Sidebar from './components/Sidebar.vue';
+
+export default { 
+  components: { 
+    sidebar: Sidebar
   }
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+  * {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  nav {
+    background-color: black !important;
+    font-size: 15px;
+  }
+  .shift-left {
+    margin-top: 50px;
+  }
+  .main-content {
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 450px;
+    margin-right: 100px;
+    padding-top: 2%;
+  }
+  @media screen and (max-width: 768px) {
+    .main-content {
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+      padding-top: 40px;
+    }
+  }
 </style>

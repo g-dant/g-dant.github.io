@@ -11,6 +11,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.md$/,
+        loader: 'vue-markdown-loader'
+      },
+      {
         test: /\.css$/,
         use: [
           'vue-style-loader',

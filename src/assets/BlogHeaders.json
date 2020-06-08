@@ -1,0 +1,22 @@
+[
+    {
+        "id": "ggplotpost",
+        "title": "GGPLOT e Tidyverse",
+        "subtitle": "A base + porque usar MUITO essas bibliotecas",
+        "img_url": "https://ggplot2.tidyverse.org/logo.png",
+        "date": "06/05/2020",
+        "description": "A biblioteca GGPLOT do R não é só uma ferramenta para gerar gráficos, ela também tem na sua filosofia muitos conceitos interessantes que por vezes são esquecidos!",
+        "tags": [
+            "Dataviz",
+            "R"
+        ]
+    },
+    {
+        "id": "awsdashboard",
+        "title": "Dashboard Serverless com AWS",
+        "subtitle": "Aplicação: Monitoramento de COVID-19",
+        "img_url": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/102308640/original/490bef81a0463eb643e8df7aef0fa13c5c2b1530/develop-aws-lambda-function.png",
+        "date": "06/06/2020",
+        "description": "Fiz o meu primeiro dashboard usando tecnologia serverless do AWS com funções python (incluindo a biblioteca Plotly!). Minha ideia nesse post é mostrara arquitetura usada e apresentar o site." 
+    }
+]
