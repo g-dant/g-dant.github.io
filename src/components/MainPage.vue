@@ -74,6 +74,26 @@
         </h4>
       </div>
       <div class="row">
+        <p>
+          Tenho experiência como consultor na área de T.I e atualmente desenvolvo sistemas.
+          Sou formado em:
+        </p>
+        <table class="table table-bordered">
+          <tr>
+            <th>Engenharia Eletrônica e de Computação</th>
+            <th>Matemática Aplicada (Ênfase em Computação Científica)</th>
+            <th>Engenharia Generalista</th>
+          </tr>
+          <tr>
+            <td>Universidade Federal do Rio de Janeiro (UFRJ)</td>
+            <td>Universidade Federal do Rio de Janeiro (UFRJ)</td>
+            <td>École Centrale de Lyon</td>
+          </tr>
+        </table>
+        <p>
+          Sou entusiasta em tecnologia e tenho o objetivo de usar este espaço como local onde
+          anoto meus estudos e compartilho meu aprendizado
+        </p>
       </div>
     </div>
   </div>

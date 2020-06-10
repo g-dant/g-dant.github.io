@@ -17,10 +17,10 @@ img {
   filter: grayscale(15%);
   transition: filter 0.2s;
 }
-img:hover {
+/* img:hover {
   filter: grayscale(90%);
   cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 768px) {
   img {
