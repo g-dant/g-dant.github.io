@@ -5,7 +5,7 @@
         <component :is="id"></component>
       </div>
     </template>
-    <template v-id="id == 'all'">
+    <template v-if="id == 'all'">
         <all-blog-posts></all-blog-posts>
     </template>
   </div>
