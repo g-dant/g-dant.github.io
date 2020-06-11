@@ -6,8 +6,7 @@
         <li class="nav-item" :class="{active: this.$route.name == 'index'}">
           <a class="nav-link" href="/">Início</a>
         </li>
-        <li class="nav-item" :class="{active: (this.$route.name == 'posts') || 
-                                              (this.$route.name == 'post')}">
+        <li class="nav-item" :class="{active: this.$route.name == 'post'}">
           <a class="nav-link" @click="gotoPost('all')">Blog</a>
         </li>
         <template v-if="this.$route.name == 'index'">
