@@ -1,18 +1,27 @@
 <template>
-  <div class="blog-container main-content fluid-container">
-    <component :is="id"></component>
+  <div>
+    <template v-if="id != 'all'">
+      <div class="blog-container main-content fluid-container">
+        <component :is="id"></component>
+      </div>
+    </template>
+    <template v-id="id == 'all'">
+        <all-blog-posts></all-blog-posts>
+    </template>
   </div>
 </template>
 
 <script>
   import PostGgplot from '../posts/ggplotpost.md'
   import PostAwsdashboard from '../posts/awsdashboard.md'
+  import AllBlogPosts from './AllBlogPosts'
 
   export default {
     props: ['id'],
     components: {
         ggplotpost: PostGgplot,
-        awsdashboard: PostAwsdashboard
+        awsdashboard: PostAwsdashboard,
+        allBlogPosts: AllBlogPosts
     },
   }
 </script>

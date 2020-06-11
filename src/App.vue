@@ -8,7 +8,7 @@
         </li>
         <li class="nav-item" :class="{active: (this.$route.name == 'posts') || 
                                               (this.$route.name == 'post')}">
-          <a class="nav-link" @click="goto('posts')">Blog</a>
+          <a class="nav-link" @click="gotoPost('all')">Blog</a>
         </li>
         <template v-if="this.$route.name == 'index'">
           <li class="nav-item" :class="{ active: true }">
@@ -52,8 +52,8 @@ export default {
         behavior: 'smooth'
       });
     },
-    goto(url) {
-      this.$router.push('/' + url + '/');
+    gotoPost: function(postId) {
+      this.$router.push('/post/' + postId);
     }
   },
   components: { 
