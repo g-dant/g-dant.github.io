@@ -41,11 +41,10 @@
           <th>Github</th>
           <tr>
             <td>dant.g@protonmail.com</td>
-            <td><a href="https://github.com/g-dant">G-Dant</a></td>
+            <td><a href="{{ site.github.owner_url }}">{{ site.github.owner_name | capitalize }}</a></td>
           </tr>
         </table>
         {% include github-content.html %}
-        <p><a href="{{ site.github.owner_url }}">GitHub - Link</a></p>
         <p><small>{{ site.credits_text | map: page.lang }}</small></p>
       </section>
 
