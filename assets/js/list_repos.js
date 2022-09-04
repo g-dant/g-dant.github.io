@@ -2,7 +2,10 @@ var newRow = function(rowText1,rowText2, rowText1URL) {
     var tr = document.createElement('tr');
     var td1 = document.createElement('td');
     var td2 = document.createElement('td');
-    td1.innerText = '<a href="' + rowText1URL + '">' + rowText1 + '</a>';
+    var a = document.createElement('a');
+    a.href = rowText1URL;
+    a.innerText = rowText1;
+    td1.appendChild(a);
     td2.innerText = rowText2;
     tr.appendChild(td1);
     tr.appendChild(td2);
