@@ -35,6 +35,7 @@
 
       <section>
         {{ content }}
+
         <table>
           <th>E-mail</th>
           <th>Github</th>
@@ -43,7 +44,12 @@
             <td><a href="{{ site.github.owner_url }}">{{ site.github.owner_name | capitalize }}</a></td>
           </tr>
         </table>
-        {% include github-content.html %}
+
+        <table>
+          <th>Projects</th>
+          <tr id="projects-node"></tr>
+        </table>
+
         <p><small>{{ site.credits_text | map: page.lang }}</small></p>
       </section>
 
