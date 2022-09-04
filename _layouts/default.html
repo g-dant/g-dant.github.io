@@ -18,17 +18,13 @@
 
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.github.owner_name }} Page</a></h1>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.github.owner_name | capitalize }} Page</a></h1>
 
         {% if site.logo %}
         <img src="{{site.logo | relative_url}}" alt="Logo" class="img-logo" style="max-width: {{ site.logomaxwidth }};" />
         {% endif %}
 
-        {% for l in site.langs %}
-          {% if page.lang == l %}
-            <p>{{ site.description | map: l }}</p>
-          {% endif %}
-        {% endfor %}
+        <p>{{ site.description | map: page.lang }}</p>
 
         <ul class="downloads">
           <li><a href="index">English<strong>en</strong></a></li>
