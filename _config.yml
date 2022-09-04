@@ -1,0 +1,19 @@
+title: G-Dant Github
+
+logo: /assets/img/light-raven.jpg
+
+description:
+  en-US: Sharing my personal projects and ideas
+  pt-BR: Compartilhando projetos pessoais e id&eacute;ias
+  fr: Un site Github pour partager mes projets personnels et idées
+
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
+logomaxwidth: 280px
+flagheight: 30px
+langs: ["en-US", "pt-BR", "fr"]
+
+domain: g-dant.github.io
+url: https://g-dant.github.io
+baseurl: /_site/
