@@ -10,6 +10,16 @@ credits_text:
   pt-BR: Baseado no tema de <a href="https://github.com/orderedlist">orderedlist
   fr: Basé sur le thème de <a href="https://github.com/orderedlist">orderedlist
 
+projects_header:
+  name:
+    en-US: Project
+    pt-BR: Projeto
+    fr: Projet
+  description:
+    en-US: Description
+    pt-BR: Descri&ccedil;&atilde;o
+    fr: Description
+
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal

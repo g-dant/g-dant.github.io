@@ -46,7 +46,8 @@
         </table>
 
         <table id="projects-node">
-          <th>Projects</th>
+          <th>{{ site.projects_header.name | map: page.lang }}</th>
+          <th>{{ site.projects_header.description | map: page.lang }}</th>
         </table>
 
         <p><small>{{ site.credits_text | map: page.lang }}</small></p>
