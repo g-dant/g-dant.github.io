@@ -1,11 +1,14 @@
-title: G-Dant Github
-
 logo: /assets/img/light-raven.jpg
 
 description:
   en-US: Sharing my personal projects and ideas
   pt-BR: Compartilhando projetos pessoais e id&eacute;ias
   fr: Un site Github pour partager mes projets personnels et idées
+
+credits_text:
+  en-US: Based on <a href="https://github.com/orderedlist">orderedlist</a> theme
+  pt-BR: Baseado no tema de <a href="https://github.com/orderedlist">orderedlist
+  fr: Basé sur le thème de <a href="https://github.com/orderedlist">orderedlist
 
 show_downloads: true
 google_analytics:
