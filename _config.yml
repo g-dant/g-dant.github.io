@@ -16,4 +16,3 @@ langs: ["en-US", "pt-BR", "fr"]
 
 domain: g-dant.github.io
 url: https://g-dant.github.io
-baseurl: /_site/
