@@ -3,20 +3,19 @@ var github_api_link = 'https://api.github.com/users/' + github_user_name + '/rep
 var githubProjectLink = project_name => 'https://' + github_user_name +'.github.io/' + project_name;
 
 var thereIsProjectLink = async function(project_name) {
-    console.log(githubProjectLink(project_name));
     return fetch(githubProjectLink(project_name)).then(resp => resp.status);
 }
 
-var newRow = async function(rowText1,rowText2, rowText1URL, project_name) {
+var newRow = async function(project_name, project_description, project_github_url) {
     return thereIsProjectLink(project_name).then((status) => {
         var tr = document.createElement('tr');
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
         var a = document.createElement('a');
-        a.href = status == '200' ? rowText1URL : githubProjectLink(project_name);
-        a.innerText = rowText1;
+        a.href = status == '200' ? project_github_url : githubProjectLink(project_name);
+        a.innerText = project_name;
         td1.appendChild(a);
-        td2.innerText = rowText2;
+        td2.innerText = project_description;
         tr.appendChild(td1);
         tr.appendChild(td2);
         return tr;
