@@ -1,8 +1,9 @@
 .link_tag {
-    background-color: rgb(17, 17, 94);
+    background-color: blue;
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
+    font-size: 7px;
 }
