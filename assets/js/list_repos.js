@@ -12,7 +12,7 @@ var newRow = async function(project_name, project_description, project_github_ur
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
         var a = document.createElement('a');
-        a.href = status == '200' ? project_github_url : githubProjectLink(project_name);
+        a.href = status != '200' ? project_github_url : githubProjectLink(project_name);
         a.innerText = project_name;
         td1.appendChild(a);
         td2.innerText = project_description;
