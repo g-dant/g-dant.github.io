@@ -18,7 +18,7 @@ var newRow = async function(project_name, project_description, project_github_ur
         a_title.innerText = project_name;
 
         a_github_link.href = project_github_url;
-        a_github_link.innerText = 'github'
+        a_github_link.innerText = 'GITHUB'
         a_github_link.classList.add('link_tag');
 
         td1.appendChild(a_title);
@@ -28,7 +28,7 @@ var newRow = async function(project_name, project_description, project_github_ur
         if (status == '200') {
             var a_website_link = document.createElement('a');
             a_website_link.href = githubProjectLink(project_name);
-            a_website_link.innerText = 'website';
+            a_website_link.innerText = 'WEBSITE';
             a_website_link.classList.add('link_tag');
             td2.appendChild(a_website_link);
         }
