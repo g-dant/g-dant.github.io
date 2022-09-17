@@ -1,7 +1,8 @@
 .link_tag {
     text-align: center;
-    margin: 3px;
+    margin: 4px;
     font-size: 10px;
     font-weight: bold;
     text-decoration: underline;
+    text-transform: capitalize;
 }
