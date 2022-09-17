@@ -1,9 +1,10 @@
 .link_tag {
-    background-color: blue;
+    background-color: black;
     color: white;
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
     margin-left: 10px;
-    font-size: 7px;
+    font-size: 10px;
+    font-weight: bold;
 }
