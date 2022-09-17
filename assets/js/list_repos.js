@@ -18,16 +18,16 @@ var newRow = async function(project_name, project_description, project_github_ur
         a_title.innerText = project_name;
 
         a_github_link.href = project_github_url;
-        a_github_link.innerText = 'Github'
+        a_github_link.innerText = '  github'
 
         td1.appendChild(a_title);
         td2.innerText = project_description;
         td2.appendChild(a_github_link);
 
-        if (a_title.href == '200') {
+        if (status == '200') {
             var a_website_link = document.createElement('a');
             a_website_link.href = githubProjectLink(project_name);
-            a_website_link.innerText = 'Website';
+            a_website_link.innerText = '  website';
             td2.appendChild(a_website_link);
         }
 
