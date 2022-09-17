@@ -7,12 +7,12 @@ var thereIsProjectLink = async function(project_name) {
 }
 
 var newRow = async function(rowText1,rowText2, rowText1URL, project_name) {
-    return thereIsProjectLink(project_name).then(() => {
+    return thereIsProjectLink(project_name).then((status) => {
         var tr = document.createElement('tr');
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
         var a = document.createElement('a');
-        a.href = restp.status == '200' ? rowText1URL : githubProjectLink(project_name);
+        a.href = status == '200' ? rowText1URL : githubProjectLink(project_name);
         a.innerText = rowText1;
         td1.appendChild(a);
         td2.innerText = rowText2;
