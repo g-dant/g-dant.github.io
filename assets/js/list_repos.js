@@ -3,6 +3,7 @@ var github_api_link = 'https://api.github.com/users/' + github_user_name + '/rep
 var githubProjectLink = project_name => 'https://' + github_user_name +'.github.io/' + project_name;
 
 var thereIsProjectLink = async function(project_name) {
+    console.log(githubProjectLink(project_name));
     return fetch(githubProjectLink(project_name)).then(resp => resp.status);
 }
 
@@ -28,6 +29,6 @@ var repos = fetch(github_api_link).
         dataArray.forEach((data) => { 
             promise_array.push(newRow(data.name, data.description, data.html_url));
         });
-        return promise_array.all();
+        return Promise.all(promise_array);
     }).then(elementsArray => 
         elementsArray.forEach(element => document.getElementById('projects-node').appendChild(element)));
