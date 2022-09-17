@@ -11,13 +11,29 @@ var newRow = async function(project_name, project_description, project_github_ur
         var tr = document.createElement('tr');
         var td1 = document.createElement('td');
         var td2 = document.createElement('td');
-        var a = document.createElement('a');
-        a.href = status != '200' ? project_github_url : githubProjectLink(project_name);
-        a.innerText = project_name;
-        td1.appendChild(a);
+        var a_title = document.createElement('a');
+        var a_github_link = document.createElement('a');
+
+        a_title.href = status != '200' ? project_github_url : githubProjectLink(project_name);
+        a_title.innerText = project_name;
+
+        a_github_link.href = project_github_url;
+        a_github_link.innerText = 'Github'
+
+        td1.appendChild(a_title);
         td2.innerText = project_description;
+        td2.appendChild(a_github_link);
+
+        if (a_title.href == '200') {
+            var a_website_link = document.createElement('a');
+            a_website_link.href = githubProjectLink(project_name);
+            a_website_link.innerText = 'Website';
+            td2.appendChild(a_website_link);
+        }
+
         tr.appendChild(td1);
         tr.appendChild(td2);
+
         return tr;
     });
 }
