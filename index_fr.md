@@ -4,7 +4,7 @@ lang: fr
 ---
 
 # Hello World!
-
+---
 Je m'appelle Dant.G! Je suis un fort enthousiaste en __Sciences Informatiques__, __Science de Données__, __Mathématiques Appliquées__, __Statistique__ et __Ingénieurie de Données__.
 
 ## À Propos de Moi
